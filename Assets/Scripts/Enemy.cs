@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     {
         disToPlayer = Vector3.Distance(transform.position, player.position);
         transform.LookAt(player.position);
-        isInPursueRange = disToPlayer < attackDistance;
+        isInPursueRange = disToPlayer < pursueDistance;
         if (isInPursueRange)
         {
             transform.Translate(0f, 0f, speed * Time.deltaTime);

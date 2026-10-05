@@ -8,7 +8,7 @@ public class PlayerBullet : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 0.5f); // (0.5f) limita o tempo de existência (distância) do tiro
     }
 
     // Update is called once per frame
